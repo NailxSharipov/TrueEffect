@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "resizableline",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/NailxSharipov/ResizableLine",
+      "state" : {
+        "revision" : "a3a308444cc9ebbb1fb73416a16554287eb50783",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}
