@@ -7,7 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		54608B5E27FE0EA900153FC3 /* ResizableLine in Frameworks */ = {isa = PBXBuildFile; productRef = 54608B5D27FE0EA900153FC3 /* ResizableLine */; };
+		5406856427FFF6CF00A3A5E6 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5406856327FFF6CF00A3A5E6 /* CGFloat.swift */; };
+		5417C7EE280D696F0053742C /* HotMetal in Frameworks */ = {isa = PBXBuildFile; productRef = 5417C7ED280D696F0053742C /* HotMetal */; };
+		5417C7F1280D6B250053742C /* RenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417C7F0280D6B250053742C /* RenderView.swift */; };
+		5417C7F3280D6B9C0053742C /* RenderView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417C7F2280D6B9C0053742C /* RenderView+ViewModel.swift */; };
+		5417C7F6280D6BFE0053742C /* EditorScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417C7F5280D6BFE0053742C /* EditorScene.swift */; };
+		5417C7F8280D6C2D0053742C /* SaveScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417C7F7280D6C2D0053742C /* SaveScene.swift */; };
+		5417C7FA280D6C5B0053742C /* PhotoNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417C7F9280D6C5B0053742C /* PhotoNode.swift */; };
+		5417C7FD280D77330053742C /* SaveShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 5417C7FC280D77330053742C /* SaveShader.metal */; };
+		5417C7FF280D8A330053742C /* Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417C7FE280D8A330053742C /* Float.swift */; };
+		5417C801280DD3CD0053742C /* ProjectState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417C800280DD3CD0053742C /* ProjectState.swift */; };
 		548A6BAE27FAE2AC0005B823 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548A6BAD27FAE2AC0005B823 /* GalleryView.swift */; };
 		548A6BB027FAE2CB0005B823 /* GalleryView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548A6BAF27FAE2CB0005B823 /* GalleryView+ViewModel.swift */; };
 		548A6BB227FAE2FF0005B823 /* GalleryView+Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548A6BB127FAE2FF0005B823 /* GalleryView+Resource.swift */; };
@@ -20,10 +29,8 @@
 		548A6BC427FC50070005B823 /* ToolsView+TopBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548A6BC327FC50070005B823 /* ToolsView+TopBarItemView.swift */; };
 		548A6BC627FC8BB10005B823 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548A6BC527FC8BB10005B823 /* Color.swift */; };
 		548A6BC827FD55B30005B823 /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548A6BC727FD55B30005B823 /* ToolsView.swift */; };
-		548A6BCA27FD587A0005B823 /* Draft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548A6BC927FD587A0005B823 /* Draft.swift */; };
-		54BE954D27FECBE2006536ED /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BE954C27FECBE2006536ED /* ImageProcessor.swift */; };
-		54BE954F27FEE09D006536ED /* FastImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BE954E27FEE09D006536ED /* FastImageView.swift */; };
-		54BE955227FEE10E006536ED /* FastImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BE955127FEE10E006536ED /* FastImageViewController.swift */; };
+		548A6BCA27FD587A0005B823 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548A6BC927FD587A0005B823 /* Project.swift */; };
+		549BA207280E9D8400622F37 /* ResizableLine in Frameworks */ = {isa = PBXBuildFile; productRef = 549BA206280E9D8400622F37 /* ResizableLine */; };
 		54CFE4F427F7643600573002 /* TrueEffectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CFE4F327F7643600573002 /* TrueEffectApp.swift */; };
 		54CFE4F627F7643600573002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CFE4F527F7643600573002 /* ContentView.swift */; };
 		54CFE4F827F7643700573002 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54CFE4F727F7643700573002 /* Assets.xcassets */; };
@@ -36,7 +43,7 @@
 		54CFE51027F76C2F00573002 /* PhotoShotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CFE50F27F76C2F00573002 /* PhotoShotViewController.swift */; };
 		54CFE51227F76C3F00573002 /* PhotoShotViewController+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CFE51127F76C3F00573002 /* PhotoShotViewController+View.swift */; };
 		54CFE51427F76C4C00573002 /* CaptureProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CFE51327F76C4C00573002 /* CaptureProcessor.swift */; };
-		54CFE51727F776F800573002 /* DraftStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CFE51627F776F800573002 /* DraftStore.swift */; };
+		54CFE51727F776F800573002 /* ProjectStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CFE51627F776F800573002 /* ProjectStore.swift */; };
 		54CFE51B27F7774D00573002 /* AsyncQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CFE51A27F7774D00573002 /* AsyncQueue.swift */; };
 		54CFE51D27F7776600573002 /* FileStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CFE51C27F7776600573002 /* FileStorage.swift */; };
 		54CFE51F27F779C400573002 /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CFE51E27F779C400573002 /* ServiceLayer.swift */; };
@@ -46,6 +53,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5406856327FFF6CF00A3A5E6 /* CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
+		5417C7EC280D693C0053742C /* HotMetal */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = HotMetal; path = ../../HotMetal; sourceTree = "<group>"; };
+		5417C7F0280D6B250053742C /* RenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderView.swift; sourceTree = "<group>"; };
+		5417C7F2280D6B9C0053742C /* RenderView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RenderView+ViewModel.swift"; sourceTree = "<group>"; };
+		5417C7F5280D6BFE0053742C /* EditorScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorScene.swift; sourceTree = "<group>"; };
+		5417C7F7280D6C2D0053742C /* SaveScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveScene.swift; sourceTree = "<group>"; };
+		5417C7F9280D6C5B0053742C /* PhotoNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoNode.swift; sourceTree = "<group>"; };
+		5417C7FC280D77330053742C /* SaveShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SaveShader.metal; sourceTree = "<group>"; };
+		5417C7FE280D8A330053742C /* Float.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Float.swift; sourceTree = "<group>"; };
+		5417C800280DD3CD0053742C /* ProjectState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectState.swift; sourceTree = "<group>"; };
 		548A6BAD27FAE2AC0005B823 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 		548A6BAF27FAE2CB0005B823 /* GalleryView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GalleryView+ViewModel.swift"; sourceTree = "<group>"; };
 		548A6BB127FAE2FF0005B823 /* GalleryView+Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GalleryView+Resource.swift"; sourceTree = "<group>"; };
@@ -58,10 +75,8 @@
 		548A6BC327FC50070005B823 /* ToolsView+TopBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToolsView+TopBarItemView.swift"; sourceTree = "<group>"; };
 		548A6BC527FC8BB10005B823 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		548A6BC727FD55B30005B823 /* ToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsView.swift; sourceTree = "<group>"; };
-		548A6BC927FD587A0005B823 /* Draft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draft.swift; sourceTree = "<group>"; };
-		54BE954C27FECBE2006536ED /* ImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
-		54BE954E27FEE09D006536ED /* FastImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastImageView.swift; sourceTree = "<group>"; };
-		54BE955127FEE10E006536ED /* FastImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastImageViewController.swift; sourceTree = "<group>"; };
+		548A6BC927FD587A0005B823 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		549BA205280E9D7700622F37 /* ResizableLine */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ResizableLine; path = ../../ResizableLine; sourceTree = "<group>"; };
 		54CFE4F027F7643600573002 /* TrueEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrueEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54CFE4F327F7643600573002 /* TrueEffectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueEffectApp.swift; sourceTree = "<group>"; };
 		54CFE4F527F7643600573002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,7 +90,7 @@
 		54CFE50F27F76C2F00573002 /* PhotoShotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoShotViewController.swift; sourceTree = "<group>"; };
 		54CFE51127F76C3F00573002 /* PhotoShotViewController+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoShotViewController+View.swift"; sourceTree = "<group>"; };
 		54CFE51327F76C4C00573002 /* CaptureProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureProcessor.swift; sourceTree = "<group>"; };
-		54CFE51627F776F800573002 /* DraftStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftStore.swift; sourceTree = "<group>"; };
+		54CFE51627F776F800573002 /* ProjectStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStore.swift; sourceTree = "<group>"; };
 		54CFE51A27F7774D00573002 /* AsyncQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncQueue.swift; sourceTree = "<group>"; };
 		54CFE51C27F7776600573002 /* FileStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStorage.swift; sourceTree = "<group>"; };
 		54CFE51E27F779C400573002 /* ServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLayer.swift; sourceTree = "<group>"; };
@@ -89,13 +104,52 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54608B5E27FE0EA900153FC3 /* ResizableLine in Frameworks */,
+				549BA207280E9D8400622F37 /* ResizableLine in Frameworks */,
+				5417C7EE280D696F0053742C /* HotMetal in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5417C7EB280D693C0053742C /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				5417C7EC280D693C0053742C /* HotMetal */,
+				549BA205280E9D7700622F37 /* ResizableLine */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		5417C7EF280D6B070053742C /* RenderView */ = {
+			isa = PBXGroup;
+			children = (
+				5417C7FB280D77220053742C /* Shader */,
+				5417C7F4280D6BE40053742C /* Scene */,
+				5417C7F0280D6B250053742C /* RenderView.swift */,
+				5417C7F2280D6B9C0053742C /* RenderView+ViewModel.swift */,
+			);
+			path = RenderView;
+			sourceTree = "<group>";
+		};
+		5417C7F4280D6BE40053742C /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				5417C7F5280D6BFE0053742C /* EditorScene.swift */,
+				5417C7F7280D6C2D0053742C /* SaveScene.swift */,
+				5417C7F9280D6C5B0053742C /* PhotoNode.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		5417C7FB280D77220053742C /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				5417C7FC280D77330053742C /* SaveShader.metal */,
+			);
+			path = Shader;
+			sourceTree = "<group>";
+		};
 		54608B5C27FE0EA900153FC3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,19 +185,11 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
-		54BE955027FEE0BC006536ED /* FastImage */ = {
-			isa = PBXGroup;
-			children = (
-				54BE954E27FEE09D006536ED /* FastImageView.swift */,
-				54BE955127FEE10E006536ED /* FastImageViewController.swift */,
-			);
-			path = FastImage;
-			sourceTree = "<group>";
-		};
 		54CFE4E727F7643600573002 = {
 			isa = PBXGroup;
 			children = (
-				54CFE4F227F7643600573002 /* TrueEffect */,
+				5417C7EB280D693C0053742C /* Packages */,
+				54CFE4F227F7643600573002 /* Shared */,
 				54CFE4F127F7643600573002 /* Products */,
 				54608B5C27FE0EA900153FC3 /* Frameworks */,
 			);
@@ -157,7 +203,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		54CFE4F227F7643600573002 /* TrueEffect */ = {
+		54CFE4F227F7643600573002 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
 				54CFE51527F776D300573002 /* Service */,
@@ -169,7 +215,7 @@
 				54CFE4F727F7643700573002 /* Assets.xcassets */,
 				54CFE4F927F7643700573002 /* Preview Content */,
 			);
-			path = TrueEffect;
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		54CFE4F927F7643700573002 /* Preview Content */ = {
@@ -208,6 +254,8 @@
 				54CFE50827F766D300573002 /* PHPhotoLibrary+Access.swift */,
 				54CFE52827F86B3E00573002 /* CVPixelBuffer.swift */,
 				548A6BC527FC8BB10005B823 /* Color.swift */,
+				5406856327FFF6CF00A3A5E6 /* CGFloat.swift */,
+				5417C7FE280D8A330053742C /* Float.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -237,7 +285,7 @@
 		54CFE51827F7770400573002 /* Draft */ = {
 			isa = PBXGroup;
 			children = (
-				54CFE51627F776F800573002 /* DraftStore.swift */,
+				54CFE51627F776F800573002 /* ProjectStore.swift */,
 			);
 			path = Draft;
 			sourceTree = "<group>";
@@ -254,13 +302,13 @@
 		54CFE52027F85C5500573002 /* Editor */ = {
 			isa = PBXGroup;
 			children = (
-				54BE955027FEE0BC006536ED /* FastImage */,
+				5417C7EF280D6B070053742C /* RenderView */,
 				548A6BC227FC4FE20005B823 /* Tools */,
 				54CFE52227F85C8000573002 /* EditorView.swift */,
 				54CFE52427F85CB800573002 /* EditorView+ViewModel.swift */,
 				548A6BBA27FB39A40005B823 /* EditorView+Resource.swift */,
-				54BE954C27FECBE2006536ED /* ImageProcessor.swift */,
-				548A6BC927FD587A0005B823 /* Draft.swift */,
+				548A6BC927FD587A0005B823 /* Project.swift */,
+				5417C800280DD3CD0053742C /* ProjectState.swift */,
 			);
 			path = Editor;
 			sourceTree = "<group>";
@@ -291,7 +339,8 @@
 			);
 			name = TrueEffect;
 			packageProductDependencies = (
-				54608B5D27FE0EA900153FC3 /* ResizableLine */,
+				5417C7ED280D696F0053742C /* HotMetal */,
+				549BA206280E9D8400622F37 /* ResizableLine */,
 			);
 			productName = TrueEffect;
 			productReference = 54CFE4F027F7643600573002 /* TrueEffect.app */;
@@ -322,7 +371,6 @@
 			);
 			mainGroup = 54CFE4E727F7643600573002;
 			packageReferences = (
-				546F15AE27FE0E6A0073CF4B /* XCRemoteSwiftPackageReference "ResizableLine" */,
 			);
 			productRefGroup = 54CFE4F127F7643600573002 /* Products */;
 			projectDirPath = "";
@@ -352,35 +400,41 @@
 			files = (
 				54CFE50927F766D300573002 /* PHPhotoLibrary+Access.swift in Sources */,
 				54CFE50B27F7682B00573002 /* MainView+Resource.swift in Sources */,
+				5417C7F1280D6B250053742C /* RenderView.swift in Sources */,
 				54CFE4F627F7643600573002 /* ContentView.swift in Sources */,
+				5417C7F8280D6C2D0053742C /* SaveScene.swift in Sources */,
 				54CFE50427F765D900573002 /* MainView.swift in Sources */,
 				548A6BC427FC50070005B823 /* ToolsView+TopBarItemView.swift in Sources */,
 				548A6BC827FD55B30005B823 /* ToolsView.swift in Sources */,
 				54CFE50627F7665600573002 /* MainView+ViewModel.swift in Sources */,
-				54CFE51727F776F800573002 /* DraftStore.swift in Sources */,
+				5417C7FD280D77330053742C /* SaveShader.metal in Sources */,
+				54CFE51727F776F800573002 /* ProjectStore.swift in Sources */,
 				54CFE51D27F7776600573002 /* FileStorage.swift in Sources */,
-				54BE954D27FECBE2006536ED /* ImageProcessor.swift in Sources */,
 				548A6BAE27FAE2AC0005B823 /* GalleryView.swift in Sources */,
 				548A6BC627FC8BB10005B823 /* Color.swift in Sources */,
 				54CFE51B27F7774D00573002 /* AsyncQueue.swift in Sources */,
 				548A6BBB27FB39A40005B823 /* EditorView+Resource.swift in Sources */,
 				54CFE4F427F7643600573002 /* TrueEffectApp.swift in Sources */,
+				5417C7FA280D6C5B0053742C /* PhotoNode.swift in Sources */,
 				54CFE52327F85C8000573002 /* EditorView.swift in Sources */,
-				548A6BCA27FD587A0005B823 /* Draft.swift in Sources */,
+				548A6BCA27FD587A0005B823 /* Project.swift in Sources */,
 				548A6BB927FB0F8C0005B823 /* ImageCacher.swift in Sources */,
 				548A6BB227FAE2FF0005B823 /* GalleryView+Resource.swift in Sources */,
 				54CFE52927F86B3E00573002 /* CVPixelBuffer.swift in Sources */,
+				5417C801280DD3CD0053742C /* ProjectState.swift in Sources */,
 				54CFE50E27F76C1000573002 /* PhotoShotView.swift in Sources */,
+				5417C7F6280D6BFE0053742C /* EditorScene.swift in Sources */,
 				54CFE51427F76C4C00573002 /* CaptureProcessor.swift in Sources */,
 				54CFE51227F76C3F00573002 /* PhotoShotViewController+View.swift in Sources */,
 				548A6BB427FAE3B90005B823 /* AssetImageView.swift in Sources */,
 				54CFE51027F76C2F00573002 /* PhotoShotViewController.swift in Sources */,
 				548A6BB627FB08440005B823 /* DraftImageView.swift in Sources */,
-				54BE954F27FEE09D006536ED /* FastImageView.swift in Sources */,
+				5417C7F3280D6B9C0053742C /* RenderView+ViewModel.swift in Sources */,
 				548A6BBF27FC3E560005B823 /* AppStyle.swift in Sources */,
+				5417C7FF280D8A330053742C /* Float.swift in Sources */,
+				5406856427FFF6CF00A3A5E6 /* CGFloat.swift in Sources */,
 				54CFE52527F85CB800573002 /* EditorView+ViewModel.swift in Sources */,
 				548A6BC127FC48150005B823 /* TrueEffectAppDelegate.swift in Sources */,
-				54BE955227FEE10E006536ED /* FastImageViewController.swift in Sources */,
 				548A6BB027FAE2CB0005B823 /* GalleryView+ViewModel.swift in Sources */,
 				54CFE51F27F779C400573002 /* ServiceLayer.swift in Sources */,
 			);
@@ -588,21 +642,13 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		546F15AE27FE0E6A0073CF4B /* XCRemoteSwiftPackageReference "ResizableLine" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/NailxSharipov/ResizableLine";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		54608B5D27FE0EA900153FC3 /* ResizableLine */ = {
+		5417C7ED280D696F0053742C /* HotMetal */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 546F15AE27FE0E6A0073CF4B /* XCRemoteSwiftPackageReference "ResizableLine" */;
+			productName = HotMetal;
+		};
+		549BA206280E9D8400622F37 /* ResizableLine */ = {
+			isa = XCSwiftPackageProductDependency;
 			productName = ResizableLine;
 		};
 /* End XCSwiftPackageProductDependency section */
